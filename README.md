@@ -1,53 +1,106 @@
-# General Assembly WDI Project 3: Aldojo
+#  ![GA](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67) **Project 3: Aldojo**
 
-[Heroku Pages](https://aldojo.herokuapp.com/)
+[Launch project on Heroku](https://aldojo.herokuapp.com/)
 
-[GitHub Repo](https://github.com/huangfuin1101/wdi-project-three-aldojo)
+## Overview
 
-Aldojo is a travelling info app created by Alex(Al), Doris(Do) and Josh(Jo) aiming for traveler to use as a tour guide. Users have the access to a variety of different features of the app when register and login, such as adding more countries, creating, editing and deleting food on particular country. User can also review the country, food and even vote for the food. On the profile page, user can see the record of the food and the country they have reviewed.
+Aldojo is a world food ranking app created by Alex(Al), Doris(Do) and Josh(Jo) that allows users to vote on and discover the best food in each country. Users can register and login, creating, editing and deleting food on particular country. Users can also review the country, food and vote for the food. On the profile page, user can see the record of the food and the country they have reviewed.
 
-Aldojo was my third project of General Assembly's Web Development Immersive. It was a group project built on 7 days with two colleagues and it also was my first go of  MEAN stack app technologies.
+Aldojo was my third project of General Assembly's Web Development Immersive course. The objective was to build a full stack(MEAN) web application using AngularJS in **one week**.
+
+## Brief
+To design and build a MEAN stack app with our own design as part of a group.
+The app must :
+
+### Backend
+
+* Use Mongo, Node & Express
+* At least 2 related models, one of which should be a user
+* Should include all RESTFUL actions for at least one of those models
+* Include authentication to restrict access to appropriate users
+* Include at least one referenced or embedded sub-document
+* Include automated tests
 
 
-## Home Page
+### Frontend
+
+* Use Angular to build a front-end that consumes your API
+* Use SCSS instead of CSS
+* Use Webpack & Yarn to manage dependencies and compile source code
+
+## Technologies Used
+
+- Angular
+- JavaScript (ES6)
+- HTML5
+- SCSS
+- Bulma CSS Framework
+- Git
+- GitHub
+- Bcrypt
+- JWT
+- Moment.js
+- Mongoose
+- Heroku
+- Trello
+- Yarn
+- Chai
+- Mocha
+
+### APIs Used
+* [REST Countries](https://restcountries.eu/)
+
+## Approach Taken
+We began the initial planning stage by first trying to collectively decide on a project idea that interested all members of our team. We knew that we wanted to create an app centred on travel and food, and from there the idea of a national dish rankings was agreed.  Whith the idea agreed we began by planning our features and what models we would need and agreed on what to include in the MVP.
+
+We started by building out the backend routes and testing them in Insomnia to ensure we had a solid backend. We worked on building basic RESTful routes for country, food and the user at the beginning. Then we moved to frontend, make sure it worked properly and we used external API to get basic country data for each of the countries.
+
+### Trello
+Using Trello, we broke down everything we could think of into smaller tasks - this allowed us to effectively delegate tasks and set up the basic app relatively quickly. We could keep track of who was doing what, what stage they were at and what was left to do.
+
+This helped us work effectively and ensure that we weren't accidentally working on the same sections, helping to reduce merge conflicts.
+
+## Screenshots
+
+### Home Page
 ![Home Page](screenshots/home.png)
 
 
 ![Home Page 2](screenshots/home-2.png)
 
 
-## Register
+### Register
 
 ![Register](screenshots/register.png)
 
 
-## Login
+### Login
 
 ![Login](screenshots/login.png)
 
 
-## Search a Country (Country Index)
+### Search a Country (Country Index)
 ![Country Index](screenshots/countryindex.png)
 
-## Inside a Country (Country Show)
+### Inside a Country (Country Show)
 ![Country Show](screenshots/country-show.png)
 
 ![Country Show 2](screenshots/country-review.png)
 
-## Add a Country
+### Add a Country
 ![Add a Country](screenshots/country-new.png)
 
-## Looking for Food (Food Index)
+### Looking for Food (Food Index)
 ![Food Index](screenshots/foodindex.png)
 
 
-## Food Show Page
+### Food Show Page
 ![Food Show](screenshots/food-show.png)
 
 ![Food Show 2](screenshots/food-review.png)
 
 
-## Profile Page
+### Profile Page
 ![Profile Page](screenshots/profile.png)
 
 ![Profile Page 2](screenshots/profile-2.png)
@@ -64,67 +117,7 @@ Aldojo was my third project of General Assembly's Web Development Immersive. It 
 ### Profile Page
 ![Profile Page](screenshots/profile-res.png)
 
-
-## Technologies Used
-
-* Git
-* GitHub
-* Heroku
-* HTML5
-* Node.js
-* MongoDB
-* express: v4.16.4
-* express-session: v1.15.6
-* body-parser: v1.18.3
-* mongoose: v5.3.7
-* method-override: v3.5.0
-* JavaScript (ECMAScript 6)
-* AngularJS
-* morgan: v1.9.1
-* @uirouter/angularjs: v1.0.20
-* satellizer: v0.15.5
-* bcrypt: v3.0.0
-* jsonwebtoken: v8.3.0
-* bluebird: v3.5.1
-* chai: v4.1.2
-* mocha: v5.2.0
-* CSS3 with animation
-* Bulma
-* Sass
-* Google Fonts
-* Favicon
-* Trello
-
-
-### APIs Used
-* REST Countries
-
-
-## Approach Taken
-
-We tried to build the backend routes and tested in Insomnia to make sure it was solid. We worked on building basic RESTful routes for country, food and the user at the beginning. Then we moved to frontend, make sure it worked probably and we used external API to get the date of all the countries.
-
-
-### Brief
-To design and build a MEAN stack app with our own design by partnering with other classmates.
-The app must :
-
-#### Server-side
-
-* Use Mongo, Node & Express
-* At least 2 related models, one of which should be a user
-* Should include all RESTFUL actions for at least one of those models
-* Include authentication to restrict access to appropriate users
-* Include at least one referenced or embedded sub-document
-* Include automated tests
-
-
-#### Client-side
-
-* Use Angular to build a front-end that consumes your API
-* Use SCSS instead of CSS
-* Use Webpack & Yarn to manage dependencies and compile source code
-
+## Functionality
 
 ### Featured Piece of Code no.1
 This is how we use external API to get all the country data, and use the country alpha3Code as the url of each individal country. When sending a request for a country, if the country it's in our database, will go stright to the country Show page, if not, will diresct to country New page to create a new page.
@@ -224,17 +217,13 @@ function profileCtrl($scope, $http, $state) {
 }
 ```
 
-### Styling
-
-We created our logo using Tiffiny green similar colour as the colour scheme for the app, presenting a user friendly and welcoming atmosphere followed by minimalist design as the priority is to show the information clearly.  
-
 ### Wins and Blockers
 
 The big win for us as a team I would say is the teamwork. Every one has contributed each part of the app, from backend, front and the styling.
 
-Our biggest challenge would be at the beginning that we couldn't get the countryShow route done for the confusion of the reference between country and food. The vote and uovote for the food is another challenge as we realised that token is an object instead of a string.
+Our biggest challenge would be at the beginning that we couldn't get the countryShow route done for the confusion of the reference between country and food. The vote and upvote for the food is another challenge as we realised that token is an object instead of a string.
 When we had basic RESTful routes done, it took us about 2 days to apply the external API.
-As for myself, write code test is a big challenge as I have only practiced little and have not too many ideas on writing the test and what to teat for.  
+
 
 ### Future Features
 
